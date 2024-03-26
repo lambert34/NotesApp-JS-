@@ -3,6 +3,7 @@ const addBtn = document.querySelector('.note-add');
 
 // написать функцию createNote
 // добавить кнопку и повесить обработчик событий
+// реализовать редактирование карточек
 
 function createNote(title, text) {
     const noteEl = document.createElement('div');
@@ -22,8 +23,12 @@ function createNote(title, text) {
     const editBtn = noteEl.querySelector('.note-edit');
     const deleteBtn = noteEl.querySelector('.note-delete');
 
+    const titleEl = noteEl.querySelector('#note-title');
+    const textEl = noteEl.querySelector('#note-title');
+
     editBtn.addEventListener('click', (e) => {
-        
+        titleEl.classList.toggle('hidden');
+        textEl.classList.toggle('hidden');
     });
 
     deleteBtn.addEventListener('click', (e) => {
