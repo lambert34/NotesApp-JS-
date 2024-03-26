@@ -27,7 +27,7 @@ function createNote(title, text) {
     });
 
     deleteBtn.addEventListener('click', (e) => {
-        
+        noteEl.remove(); //данный метод удаляет описанный дом-узел 
     })
 
     return noteEl;
