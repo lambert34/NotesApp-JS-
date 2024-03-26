@@ -19,8 +19,8 @@ function createNote(title, text) {
     <p id="note-text">${text}</p>
     `;
 
-    const editBtn = document.querySelector('.note-edit');
-    const deleteBtn = document.querySelector('.note-delete');
+    const editBtn = noteEl.querySelector('.note-edit');
+    const deleteBtn = noteEl.querySelector('.note-delete');
 
     editBtn.addEventListener('click', (e) => {
         
